@@ -38,6 +38,7 @@ public class BookController2 {
 
     @DeleteMapping("{id}")
     public Result delete(@PathVariable Integer id){
+        System.out.println("根据id删除成功！");
         return new Result(bookService.removeById(id));
     }
 
