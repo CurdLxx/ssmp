@@ -32,6 +32,7 @@ public class BookController2 {
 
     @PutMapping
     public Result update(@RequestBody Book book){
+        System.out.println("删除成功~~");
         boolean flag = bookService.updateById(book);
         return new Result(flag, flag ? "修改成功^_^" : "修改失败-_-!");
     }
