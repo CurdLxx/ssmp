@@ -43,6 +43,7 @@ public class BookController2 {
 
     @GetMapping("{id}")
     public Result getById(@PathVariable Integer id){
+        System.out.println("根据id查询成功！");
         return new Result(true,bookService.getById(id));
     }
 
